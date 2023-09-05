@@ -9,7 +9,7 @@
 <body>
 
 <h2 align="center"> FastMandarin: Efficient Local Modeling for Natural Mandarin Speech Synthesis</h2>
-<h3 align="center">Chenglong Jiang, Ying Gao, Hao Jin, Lingrong Pan, Wing W. Y. Ng</h3>
+<h3 align="center">Chenglong Jiang, Ying Gao, Hao Jin, Linrong Pan, Wing W. Y. Ng</h3>
   
 <div><b>Abstract:</b> Attention-based speech synthesis methods often suffer from dispersed attention across the entire input sequence, resulting in poor local modeling and unnatural Mandarin synthesized speech. To address these issues, we present FastMandarin, a rapid and natural Mandarin speech synthesis framework that employs two explicit methods to enhance local modeling and improve pronunciation representation. Firstly, we tag Chinese characters to delineate phrase boundaries within a sentence, and these tags are integrated into the network’s hidden layer features at each time step, effectively bolstering local contributions in latent representations. Secondly, we introduce a multi-scale context feature extractor network that employs parallel convolution with various filters. Additionally, we optimize duration alignment and Mel-pectrogram reconstruction to enhance overall performance. Experimental results demonstrate that FastMandarin excels in local modeling,delivering robust Mandarin speech synthesis results.</div>
 
@@ -76,54 +76,7 @@
 </table>
 </blockquote>
   
-<h4>3. Ablation Studies : </h4>
-<blockquote>
-<table>
-<tr><td colspan=4><span>3.1 夏季是筹款淡季，原因是不少捐款者往往在度假。(Summer is a low season for fundraising, as many donors tend to be on vacation.)</span></td></tr>
-<tr>
-<td align=center width=200>without SDE,LC and Tone</td><td align=center width=200>with LC</td><td align=center width=200>with LC and Tone</td><td align=center width=200>with SDE,LC and Tone</td><td align=center width=200>Ground-truth</td>
-</tr>
-<tr>
-<td><audio controls><source src="/demo/test1-fs2.wav"></audio></td>
-<td><audio controls><source src="/demo/test1-our-LC.wav"></audio></td>
-<td><audio controls><source src="/demo/test1-our-LC-tone.wav"></audio></td>
-<td><audio controls><source src="/demo/test1-our1.wav"></audio></td>
-<td><audio controls><source src="/demo/test1-gt.wav"></audio></td>
-</tr>
-<tr height="15px"></tr>
-
-  
-<tr><td colspan=4><span>3.2 被野猪糟蹋得一蹋糊涂的庄稼地。(Fields ravaged by wild boars.)</span></td></tr>
-<tr>
-<td align=center width=200>without SDE,LC and Tone</td><td align=center width=200>with LC</td><td align=center width=200>with LC and Tone</td><td align=center width=200>with SDE,LC and Tone</td><td align=center width=200>Ground-truth</td>
-</tr>
-<tr>
-<td><audio controls><source src="/demo/test1-xr-fs2.wav"></audio></td>
-<td><audio controls><source src="/demo/test1-xr-text-cnn.wav"></audio></td>
-<td><audio controls><source src="/demo/case2-with-lc-tone.wav"></audio></td>
-<td><audio controls><source src="/demo/test1-xr-our.wav"></audio></td>
-<td><audio controls><source src="/demo/test1-xr-gt.wav"></audio></td>
-</tr>
-<tr height="15px"></tr>
-  
-<tr><td colspan=4><span>3.3 其中两本出自古鄂尔多斯人之笔，体现出浓郁的地方文化特色。(Two of them were written by people in Ordos since ancient times, reflecting strong local cultural characteristics.)</span></td></tr>
-<tr>
-<td align=center width=200>without SDE,LC and Tone</td><td align=center width=200>with LC</td><td align=center width=200>with LC and Tone</td><td align=center width=200>with SDE,LC and Tone</td><td align=center width=200>Ground-truth</td>
-</tr>
-<tr>
-<td><audio controls><source src="/demo/test2-xr-fs2.wav"></audio></td>
-<td><audio controls><source src="/demo/test2-xr-text-cnn.wav"></audio></td>
-<td><audio controls><source src="/demo/test2-xr-cnn-tone.wav"></audio></td>
-<td><audio controls><source src="/demo/test2-xr-our.wav"></audio></td>
-<td><audio controls><source src="/demo/test2-xr-gt.wav"></audio></td>
-</tr>
-<tr height="15px"></tr>
-
-<tr height="15px"></tr>
-</table>
-</blockquote>
-
-<h4>4. Test case1 of ablation studies : </h4>
+<h4>2. Test case of audio: </h4>
 <blockquote>
 <table>
   <thead>
